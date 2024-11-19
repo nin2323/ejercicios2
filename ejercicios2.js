@@ -7,7 +7,7 @@ Es posible que alguna condición no se pueda dar nunca. Indica por qué
 */
 let result;
 let x;
-let;
+let y;
 
 // Ejemplo, x= 3, y = 1
 result = x > y;
@@ -62,7 +62,7 @@ console.log(result);
 result = typeof x === 'number' && x > '5';
 console.log(result);
 
-// Es imposible porque se junta un número con .length. Habria que hacer: number.toString().length 
+// x = '5.00001' 
 result = x.length > 5 && x.length < 6.0000000000001;
 console.log(result);
 
@@ -71,6 +71,7 @@ result = y.length && x.length && x.length !== y.length;
 console.log(result);
 
 // Es imposible porque un numero no puede tener length. Habria que hacer : number.toString().length
+// el tamaño de una cadena de texto no puede ser decimales
 result = x.length > 0 && x.length < 1;
 console.log(result);
 
@@ -83,10 +84,10 @@ result = x !== y && x === 5 && y == 5;
 console.log(result);
 
 // x = 0 y = 1
-result = !x || (x && !y) || (y && x);
+result = !0 || (0 && !1) || (1 && 0);
 console.log(result);
 
-// Es imposible porque no se puede usar un número con un .length
+// x = '5'  y ='5'
 result = y === x && y !== 'number' && x.length;
 console.log(result);
 
@@ -94,7 +95,7 @@ console.log(result);
 result = (!x && !y && x) || (y && x && x < 100 && y < 0);
 console.log(result);
 
-// Es imposible porquue ambas se contardicen
+// 
 result = y !== '' && typeof y === 'number';
 console.log(result);
 
@@ -107,11 +108,12 @@ result = y === '' && typeof y !== 'number';
 console.log(result);
 
 // No se puede ya que para dar true, y = 0,  pero aparece y !== 0
+// y = ''
 result = !y && y !== false && y !== 0;
 console.log(result);
 
 // x = 0
-result = typeof x == 'number' && !x;
+result = typeof 0 == 'number' && !0;
 console.log(result);
 
 // x = 0.5 y = 0.5
@@ -124,3 +126,107 @@ console.log(result);
 
 result = 'Juan es de Cantabria'.length
 console.log(result)  // Prueba para saber el .length
+
+
+
+
+// ejercicios clase 3
+
+
+const month = 12;
+let monthName 
+
+if (month === 1 ) {
+    monthName = 'enero';
+} else if (month === 2) {
+    monthName = 'febrero';
+} else if (month === 3) {
+    monthName = 'marzo';
+} else if (month ===4) {
+    monthName = 'abril';
+} else if (month === 5) {
+    monthName = 'mayo';
+} else if (month === 6) {
+    monthName = 'junio';
+} else if (month === 7) {
+    monthName = 'julio';
+} else if (month === 8) {
+    monthName = 'agosto';
+} else if (month === 9) {
+    monthName = 'septiembre';
+} else if (month === 10) {
+    monthName = 'octubre';
+} else if (month === 11) {
+    monthName = 'noviembre';
+} else if (month === 12) {
+    monthName = 'diciembre';
+} 
+ console.log(monthName)
+
+
+
+
+
+ function whatMonthName(month) {
+    
+let monthName;
+
+if (month === 1 ) {
+    monthName = 'enero';
+} else if (month === 2) {
+    monthName = 'febrero';
+} else if (month === 3) {
+    monthName = 'marzo';
+} else if (month === 4) {
+    monthName = 'abril';
+} else if (month === 5) {
+    monthName = 'mayo';
+} else if (month === 6) {
+    monthName = 'junio';
+} else if (month === 7) {
+    monthName = 'julio';
+} else if (month === 8) {
+    monthName = 'agosto';
+} else if (month === 9) {
+    monthName = 'septiembre';
+} else if (month === 10) {
+    monthName = 'octubre';
+} else if (month === 11) {
+    monthName = 'noviembre';
+} else if (month === 12) {
+    monthName = 'diciembre';
+} 
+ console.log(monthName);
+ }
+
+ whatMonthName(1)
+ whatMonthName(2)
+ whatMonthName(3)
+ whatMonthName(4)
+ whatMonthName(5)
+ whatMonthName(6)
+ whatMonthName(7)
+ whatMonthName(8)
+ whatMonthName(9)
+ whatMonthName(10)
+ whatMonthName(11)
+ whatMonthName(12)
+ 
+ 
+
+ 
+    
+   
+
+
+    
+
+
+
+
+
+
+
+
+
+
