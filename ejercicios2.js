@@ -214,6 +214,9 @@ if (month === 1 ) {
  
  
 
+
+
+ 
  //Ejercicios clase 3
 
   function between0and10(num) {
