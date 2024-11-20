@@ -214,11 +214,37 @@ if (month === 1 ) {
  
  
 
- 
+ //Ejercicios clase 3
+
+  function between0and10(num) {
+    if (num >= 0 & num <= 10) {
+        return true;  
+    } else {
+        return false;
+    }
+          
+    }   
+
+    console.log(between0and10(2))
+
+        
+
+    
+    function textOrNum(param) {
+    if (typeof param === 'number') {
+        return 'number';
+
+    } else if (typeof param === 'string') {
+          return 'string';   
+        }
+    }
+        
+
+    console.log(textOrNum(6))
     
    
 
-
+    
     
 
 
