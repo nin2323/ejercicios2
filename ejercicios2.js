@@ -213,10 +213,6 @@ if (month === 1 ) {
  whatMonthName(12)
  
  
-
-
-
- 
  //Ejercicios clase 3
 
   function between0and10(num) {
