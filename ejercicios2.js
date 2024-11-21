@@ -127,11 +127,7 @@ console.log(result);
 result = 'Juan es de Cantabria'.length
 console.log(result)  // Prueba para saber el .length
 
-
-
-
 // ejercicios clase 3
-
 
 const month = 12;
 let monthName 
@@ -162,9 +158,6 @@ if (month === 1 ) {
     monthName = 'diciembre';
 } 
  console.log(monthName)
-
-
-
 
 
  function whatMonthName(month) {
