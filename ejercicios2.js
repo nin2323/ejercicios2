@@ -213,38 +213,42 @@ if (month === 1 ) {
  whatMonthName(12)
  
  
- //Ejercicios clase 3
+ //Ejercicios clase 3 en casa
 
-  function between0and10(num) {
-    if (num >= 0 & num <= 10) {
-        return true;  
+ /*
+  Crear una función que me diga si un número está entre 0 y 10  
+   => utilizar un return;
+*/
+function between0And10(num) {
+    if (num >= 0 & num <=10) {
+        return true;
     } else {
-        return false;
+        return false
     }
-          
-    }   
+}
+console.log(between0And10(7))
 
-    console.log(between0and10(2))
-
-        
-
-    
-    function textOrNum(param) {
-    if (typeof param === 'number') {
+    /*
+  Crea una función que me diga si un parámetro es de tipo cadena de texto o número.
+*/
+function textOrNum(param) {
+    if (typeof param === 'string') {
+        return 'string'
+    } else if (typeof param === 'number') {
         return 'number';
+    }   
+}
+console.log(textOrNum(9))
 
-    } else if (typeof param === 'string') {
-          return 'string';   
-        }
-    }
-        
-
-    console.log(textOrNum(6))
-    
    
 
-    
-    
+
+
+
+  
+ 
+
+
 
 
 
