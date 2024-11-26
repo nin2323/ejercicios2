@@ -233,7 +233,107 @@ function textOrNum(param) {
 }
 console.log(textOrNum(9))
 
-   
+
+/*
+  Crea una función que indique si un número es par o impar.
+*/
+function odOrOdd(num) {
+    if (num % 2 === 0) {
+        return 'od';
+    }   return 'odd';
+}
+console.log(odOrOdd(2))
+
+/*
+  Crea una función que indique el mayor de dos números
+*/
+function maxNumber(num1, num2){
+    return Math.max(num1, num2)
+}
+console.log(maxNumber(488448484, 9484848338383838))
+
+/*
+  Crea una función que indique el mayor de tres números
+*/
+function maxNumber(num1, num2, num3){
+    return Math.max(num1, num2, num3)
+}
+console.log(maxNumber(4, 9, 23))
+
+/*
+  Crea una función que, dados dos edades, te diga cuántos años hay entre ellas
+*/
+function betweenAge1AndAge2(age1, age2) {
+    return Math.abs(age1 - age2);
+}
+console.log(betweenAge1AndAge2(27, 43))
+
+/*
+ Crea una función que al pasarle la nota de un examen (de 0 a 10) te devuelva la nota: suspenso, aprobado, bien, 
+ notable o sobresaliente.
+*/
+function exam(note) {
+    if (note >= 0 && note < 5) {
+        return 'suspense';
+    } else if (note >= 5 && note < 6) {
+        return 'pass';
+    } else if (note >= 6 && note <7) {
+        return 'good';
+    } else if (note >= 7 && note <9) {
+        return 'notable';
+    }  else if (note >= 9 && note <= 10) {
+        return 'outstanding'
+    } return 'caracter no válido'
+          
+}
+console.log(exam('7'))
+
+/*
+  Comprueba si dado un mes(Enero, Febrero...) y un día del mes (del 1 al 31), estamos en otoño, invierno, primavera o verano. 
+*/
+function calendar(day, month) {
+    if (day >= 20 && month === 'march' || day >=1 && day <=31 && month === 'april' || day >=1 && day <=31 && month === 'may' || day <= 21 && month === 'june') {
+        return 'spring';
+    } else if (day >= 22 && month ==='june' || day >=1 && day <=31 && month === 'july' || day >=1 && day <=31 && month === 'august' || day <= 23 && month === 'september') {
+        return 'summer'
+    } else if (day >= 24 && month ==='september' || day >=1 && day <=31 && month === 'october' || day >=1 && day <=31 && month === 'november' || day <= 21 && month === 'december') {
+        return 'autumn'
+    } else if (day >= 22 && month ==='december' || day >=1 && day <=31 && month === 'january' || day >=1 && day <=31 && month === 'february' || day <= 19 && month === 'march') {
+        return 'winter'
+    }
+}
+console.log(calendar(27, 'december'))
+
+/*
+  Crea una función que categorice vehículos en función de sus características. Tendrá tres parámetros: 
+    - El número de ruedas
+    - El tipo de motor, debe ser gasolina, electrico o manual
+    - Si tiene pedales o no
+
+  Esta función debe devolver 'coche', 'moto', 'patinete', 'bicicleta' o 'desconocido':
+  - Los coches tienen 4 ruedas, no tienen pedales y pueden ser eléctricos o de gasolina.
+  - Las motos solo tienen 2 rueda, pueden ser de gasolina y no tienen pedales
+  - Las bicicletas solo tienen 2 ruedas y pueden ser eléctricas o manuales y tienen pedales.
+  - Los patinetes solo tienen 2 ruedas, pueden ser eléctricos o manuales y no tienen pedales pedales.
+  - En cualquier otro caso devuelve desconocido.
+*/
+function typeOfVehicle(wheels, motor, pedals) {
+    if (wheels === 4 && !pedals && (motor === 'gasoline' || motor === 'electric')) {
+        return 'car'
+    } else if (wheels === 2 && !pedals && motor === 'gasoline') {
+        return 'moto'
+    } else if (wheels === 2 && pedals && (motor === 'electric' || motor === 'manual')) {
+        return 'bike'
+    } else if (wheels === 2 && !pedals && (motor === 'electric' || motor === 'manual')) {
+        return 'patinete'
+    } return 'unknown'
+}
+console.log(typeOfVehicle(8, 'electric', 'pedals'))
+
+
+
+
+
 
 
 
