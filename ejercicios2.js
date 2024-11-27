@@ -233,7 +233,6 @@ function textOrNum(param) {
 }
 console.log(textOrNum(9))
 
-
 /*
   Crea una función que indique si un número es par o impar.
 */
@@ -255,7 +254,7 @@ console.log(maxNumber(488448484, 9484848338383838))
 /*
   Crea una función que indique el mayor de tres números
 */
-function maxNumber(num1, num2, num3){
+function maxNumber(num1, num2, num3) {
     return Math.max(num1, num2, num3)
 }
 console.log(maxNumber(4, 9, 23))
@@ -275,16 +274,15 @@ console.log(betweenAge1AndAge2(27, 43))
 function exam(note) {
     if (note >= 0 && note < 5) {
         return 'suspense';
-    } else if (note >= 5 && note < 6) {
+    } if (note >= 5 && note < 6) {
         return 'pass';
-    } else if (note >= 6 && note <7) {
+    } if (note >= 6 && note <7) {
         return 'good';
-    } else if (note >= 7 && note <9) {
+    } if (note >= 7 && note <9) {
         return 'notable';
-    }  else if (note >= 9 && note <= 10) {
-        return 'outstanding'
-    } return 'caracter no válido'
-          
+    } if (note >= 9 && note <= 10) {
+        return 'outstanding';
+    } return 'caracter no válido';         
 }
 console.log(exam('7'))
 
@@ -294,12 +292,12 @@ console.log(exam('7'))
 function calendar(day, month) {
     if (day >= 20 && month === 'march' || day >=1 && day <=31 && month === 'april' || day >=1 && day <=31 && month === 'may' || day <= 21 && month === 'june') {
         return 'spring';
-    } else if (day >= 22 && month ==='june' || day >=1 && day <=31 && month === 'july' || day >=1 && day <=31 && month === 'august' || day <= 23 && month === 'september') {
-        return 'summer'
-    } else if (day >= 24 && month ==='september' || day >=1 && day <=31 && month === 'october' || day >=1 && day <=31 && month === 'november' || day <= 21 && month === 'december') {
-        return 'autumn'
-    } else if (day >= 22 && month ==='december' || day >=1 && day <=31 && month === 'january' || day >=1 && day <=31 && month === 'february' || day <= 19 && month === 'march') {
-        return 'winter'
+    } if (day >= 22 && month === 'june' || day >=1 && day <=31 && month === 'july' || day >=1 && day <=31 && month === 'august' || day <= 23 && month === 'september') {
+        return 'summer';
+    } if (day >= 24 && month === 'september' || day >=1 && day <=31 && month === 'october' || day >=1 && day <=31 && month === 'november' || day <= 21 && month === 'december') {
+        return 'autumn';
+    } if (day >= 22 && month === 'december' || day >=1 && day <=31 && month === 'january' || day >=1 && day <=31 && month === 'february' || day <= 19 && month === 'march') {
+        return 'winter';
     }
 }
 console.log(calendar(27, 'december'))
@@ -319,16 +317,22 @@ console.log(calendar(27, 'december'))
 */
 function typeOfVehicle(wheels, motor, pedals) {
     if (wheels === 4 && !pedals && (motor === 'gasoline' || motor === 'electric')) {
-        return 'car'
-    } else if (wheels === 2 && !pedals && motor === 'gasoline') {
-        return 'moto'
-    } else if (wheels === 2 && pedals && (motor === 'electric' || motor === 'manual')) {
-        return 'bike'
-    } else if (wheels === 2 && !pedals && (motor === 'electric' || motor === 'manual')) {
-        return 'patinete'
-    } return 'unknown'
+        return 'car';
+    } if (wheels === 2 && !pedals && motor === 'gasoline') {
+        return 'moto';
+    } if (wheels === 2 && pedals && (motor === 'electric' || motor === 'manual')) {
+        return 'bike';
+    } if (wheels === 2 && !pedals && (motor === 'electric' || motor === 'manual')) {
+        return 'patinete';
+    } return 'unknown';
 }
 console.log(typeOfVehicle(8, 'electric', 'pedals'))
+
+
+// Arrays
+const fruits = ['manazana', 'melon', 'pera']
+console.log(fruits.splice(1, 2));
+
 
 
 
